@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customCss.css">
+    <script src="https://kit.fontawesome.com/b30a1ca2a2.js" crossorigin="anonymous"></script>
+</head>
+<body class="m-0 p-0 font-poppins box-border bg-[#080808] text-[#fff]">
+    <!-- header -->
+    <div class="w-full h-[100vh] bg-[url(images/background.png)] bg-cover bg-center">
+        <div class="py-[10px] px-[10%]">
+            <nav class="flex justify-between items-start flex-wrap">
+                <img src="./images/logo.png" class="w-[140px] logo" >
+                <ul>
+                    <li class="inline-block list-none py-[10px] px-[20px] transition-all duration-200 relative group">
+                        <a href="#" class="text-white text-[25px]">Home</a>
+                        <div class="w-full h-1 bg-[#ff004f] hidden mt-1 group-hover:block"></div>
+                    </li>
+                    <li class="inline-block list-none py-[10px] px-[20px] transition-all duration-200 relative group">
+                        <a href="#about" class="text-white text-[25px]">About</a>
+                        <div class="w-full h-1 bg-[#ff004f] hidden mt-1 group-hover:block"></div>
+                    </li>
+                    <li class="inline-block list-none py-[10px] px-[20px] transition-all duration-200 relative group">
+                        <a href="#services" class="text-white text-[25px]">Services</a>
+                        <div class="w-full h-1 bg-[#ff004f] hidden mt-1 group-hover:block"></div>
+                    </li>
+                    <li class="inline-block list-none py-[10px] px-[20px] transition-all duration-200 relative group">
+                        <a href="#portfolio" class="text-white text-[25px]">Portfolio</a>
+                        <div class="w-full h-1 bg-[#ff004f] hidden mt-1 group-hover:block"></div>
+                    </li>
+                    <li class="inline-block list-none py-[10px] px-[20px] transition-all duration-200 relative group">
+                        <a href="#contact" class="text-white text-[25px]">Contact</a>
+                        <div class="w-full h-1 bg-[#ff004f] hidden mt-1 group-hover:block"></div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mt-[20%] text-[30px] header-text">
+                <p class="text-3xl font-bold">Frontend Designer</p>
+                <h1 class="text-6xl mt-[20px] font-extrabold">Hi, I'm <span class="text-[#ff004f]">Prince Kumar Sinha  </span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about section-------- -->
+    <section id="about">     
+       <div class="py-[80px] px-[10%] text-[#ababab]"> <!-- about -->            
+            <div> <!-- container -->                
+                <div class="flex justify-between flex-wrap"> <!-- row -->                   
+                    <div class="basis-[35%]">  <!-- col-1 -->
+                    <img src="./images/user.png" class="w-full rounded-[15px]">
+                    </div>  
+                    <div class="basis-[60%]"> <!-- col-2 -->
+                        <h1 class="text-[#fff] font-extrabold text-6xl">About Me</h1>
+                        <p class="mt-5 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi deleniti voluptate blanditiis ex! Voluptas tempore rerum, sequi atque quisquam vero officiis aspernatur quibusdam neque aperiam, cum repudiandae quas eaque, laborum ut quae? Enim quaerat, magnam impedit doloremque sapiente cum nesciunt omnis assumenda quas odit maiores hic similique eligendi aliquid deleniti quidem quam eius placeat molestiae autem ducimus? Voluptatibus ex pariatur veniam reiciendis accusantium rerum, quibusdam itaque inventore ipsa dicta magni quis aut expedita illum sunt eligendi ducimus. Doloremque doloribus rem veritatis sequi, ad quasi totam ipsam nesciunt iusto delectus.</p>
+                        <div class="flex mt-[20px] mx-[0] mb-[40px] tab-titles">  <!-- tab-titles -->
+                            <p class="mr-[50px] text-[18px] font-medium cursor-pointer relative tab-links activelinks" onclick="opentab('skills')">Skills</p>
+                            <p class="mr-[50px] text-[18px] font-medium cursor-pointer relative tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="mr-[50px] text-[18px] font-medium cursor-pointer relative tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                        <div class="tab-contents active-tab" id="skills"> <!-- Skills -->
+                            <ul>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">Frontend</span><br>Designing Web Interfaces</li>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">Data Structure and Algorithms</span><br>Problem-Solving</li>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="experience"> <!-- Experience -->
+                            <ul>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">Frontend</span><br>Designing Web Interfaces</li>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">Data Structure and Algorithms</span><br>Problem-Solving</li>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="education"> <!-- Education -->
+                            <ul>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">2026</span><br>Bachelor of Technology in Computer Science and Engineering</li>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">2021</span><br>Intermediate 84.2%</li>
+                                <li class="my-[10px] mx-[0]"><span class="text-[#ff004f] text-[20px]">2019</span><br>High School 83.3%</li>
+                            </ul>
+                           </div>                       
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------services----------- -->
+    <div id="services" class="py-[30px] px-[10%] " id="services">
+        <div>
+            <h1 class="text-[#fff] font-extrabold text-6xl">My Services</h1>
+            <div class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-[40px] mt-[50px]">  <!-- --serviceslist-- -->
+                <div class="bg-[#262626] p-[40px] text-[13px] font-light rounded-[10px] hover:bg-[#ff004f] hover:translate-y-[10px] transition-all duration-300">
+                    <i class="fa-solid fa-code text-[50px] mb-[30px]" ></i>
+                    <h2 class="text-[40px] mb-[15px] font-bold">Web design</h2>
+                    <p class="text-[20px] text-[#fff] font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam, perspiciatis distinctio voluptate accusamus aperiam temporibus nulla esse impedit reprehenderit?</p>
+                    <a href="#" class="text-[#ff004f] font-bold text-[20px] my-[20px] inline-block">Learn more...</a>
+                </div>
+                <div class="bg-[#262626] p-[40px] text-[13px] font-light rounded-[10px] hover:bg-[#ff004f] hover:translate-y-[10px] transition-all duration-300">
+                    <i class="fas fa-crop-alt text-[50px] mb-[30px]" ></i>
+                    <h2 class="text-[40px] mb-[15px] font-bold">Frontend Design</h2>
+                    <p class="text-[20px] text-[#fff] font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam, perspiciatis distinctio voluptate accusamus aperiam temporibus nulla esse impedit reprehenderit?</p>
+                    <a href="#" class="text-[#ff004f] font-bold text-[20px] my-[20px] inline-block">Learn more...</a>
+                </div>
+                <div class="bg-[#262626] p-[40px] text-[13px] font-light rounded-[10px] hover:bg-[#ff004f] hover:translate-y-[10px] transition-all duration-300">
+                    <i class="fa-brands fa-app-store text-[50px] mb-[30px]" ></i>
+                    <h2 class="text-[40px] mb-[15px] font-bold">App design</h2>
+                    <p class="text-[20px] text-[#fff] font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam, perspiciatis distinctio voluptate accusamus aperiam temporibus nulla esse impedit reprehenderit?</p>
+                    <a href="#" class="text-[#ff004f] font-bold text-[20px] my-[20px] inline-block">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------portfolio---------- -->
+    <div class="px-[10%]" id="portfolio">
+        <div>
+            <h1 class="text-[#fff] font-extrabold text-6xl">My Work</h1>
+            <div class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-[40px] mt-[50px]" >
+                <div class="work relative overflow-hidden">
+                    <img src="./images/work-1.png" class="w-full rounded-[10px] block transition-transform duration-500">
+                    <div class="layer w-full h-0 bg-[linear-gradient(rgba(0,0,0,0.6),_#ff004f)] rounded-[10px] left-0 bottom-0 overflow-hidden absolute flex items-center justify-center flex-col py-0 px-[4px] text-center transition-height duration-500">
+                        <h3 class="font-bold text-3xl">Social Media</h3>
+                        <p class=" text-white mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis distinctio incidunt rerum dolorem odit, beatae ea assumenda culpa laborum minus!</p>
+                        <a href="#" class="mt-[20px] text-[#ff004f] text-[18px] leading-[60px] bg-white rounded-[50%] w-[60px] h-[60px] text-center"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work relative overflow-hidden ">
+                    <img src="./images/work-2.png" class="w-full rounded-[10px] block transition-transform">
+                    <div class="layer w-full h-0 bg-[linear-gradient(rgba(0,0,0,0.6),_#ff004f)] rounded-[10px] left-0 bottom-0 overflow-hidden absolute flex items-center justify-center flex-col py-0 px-[4px] text-center transition-height duration-500">
+                        <h3 class="font-bold text-3xl ">Music App</h3>
+                        <p class=" text-white mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt nisi doloribus autem at voluptatibus? Minima dolores repudiandae sed blanditiis.</p>
+                        <a href="#" class="mt-[20px] text-[#ff004f] text-[18px] leading-[60px] bg-white rounded-[50%] w-[60px] h-[60px] text-center"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work relative overflow-hidden ">
+                    <img src="./images/work-3.png" class="w-full rounded-[10px] block transition-transform">
+                    <div class="layer w-full h-0 bg-[linear-gradient(rgba(0,0,0,0.6),_#ff004f)] rounded-[10px] left-0 bottom-0 overflow-hidden absolute flex items-center justify-center flex-col py-0 px-[4px] text-center transition-height duration-500">
+                        <h3 class="font-bold text-3xl">Online Shopping</h3>
+                        <p class=" text-white mt-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sapiente consequuntur et voluptatum sed voluptas quae, velit repudiandae asperiores. Sed.</p>
+                        <a href="#" class="mt-[20px] text-[#ff004f] text-[18px] leading-[60px] bg-white rounded-[50%] w-[60px] h-[60px] text-center"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="block my-[50px] mx-auto w-fit py-[14px] px-[50px] border border-[#ff004f] rounded-[6px] text-white hover:bg-[#ff004f] transition-background">See more</a>
+        </div>
+    </div>
+<!-- ---------------contact------------- -->
+    <div class="px-[10%]" id="contact">
+        <div>
+            <div class="grid grid-cols-2">
+                <div class="contact-left basis-[35px]">
+                    <h1 class="text-7xl text-white font-bold">Contact me</h1>
+                    <p class="mt-[30px] font-bold text-white text-[35px]"> <i class="fa-solid fa-paper-plane text-[#ff004f] mr-[15px] text-[35px]" ></i> abc@gmail.com</p>
+                    <p class="mt-[30px] font-bold text-white text-[35px]"><i class="fa-solid fa-phone text-[#ff004f] mr-[15px] text-[35px]" ></i> 0123456789</p>
+                    <div class="social-icons mt-[30px] ">
+                        <a href="#"><i class="fa-brands fa-instagram text-[30px] mr-[15px] text-[#ababab] inline-block hover:text-[#ff004f] transition-transform hover:translate-y-[-5px]" ></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin text-[30px] mr-[15px] text-[#ababab] inline-block hover:text-[#ff004f] transition-transform hover:translate-y-[-5px]" ></i></a>
+                        <a href="#"><i class="fa-brands fa-github text-[30px] mr-[15px] text-[#ababab] inline-block hover:text-[#ff004f] transition-transform hover:translate-y-[-5px]" ></i></a>
+                    </div>
+                    <a href="./images/my-cv.pdf" download="" class="inline-block my-[50px] mx-auto w-fit py-[14px] px-[50px] bg-[#ff004f] rounded-[6px] text-white transition-background hover:cursor-pointer">Download Resume</a>
+                </div>
+                <div class="contact-right basis-[60px]">
+                    <form class="w-full">
+                        <input type="text" name="Name" placeholder="Enter your name" required class="w-full outline-none bg-[#262626] p-[15px] my-[15px] mx-0 text-white text-[18px] rounded-[15px] ">
+                        <input type="email" name="Email" placeholder="Enter your email address" required class="w-full outline-none bg-[#262626] p-[15px] my-[15px] mx-0 text-white text-[18px] rounded-[15px] ">
+                        <textarea name="Message" rows="6" placeholder="Enter your message here" class="w-full outline-none bg-[#262626] p-[15px] my-[15px] mx-0 text-white text-[18px] rounded-[15px] "></textarea>
+                        <button type="submit" class="inline-block my-[50px] mx-auto w-fit py-[14px] px-[60px] text-[18px] mt-[20px] bg-[#ff004f] rounded-[6px] text-white transition-background hover:cursor-pointer ">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright w-full text-center py-[25px] px-0 mt-[20px] bg-[#262626]">
+            <p class="text-[20px]">Copyright &#169; Full Name</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activelinks");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("activelinks");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
